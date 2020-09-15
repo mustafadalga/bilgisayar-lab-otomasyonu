@@ -8,7 +8,7 @@
 
 
 ## Açıklama 
-**Üniversite veya lise gibi bilgisayar laboratuvarlarının kullanıldığı yerlerde , eğitimcilerin laboratuvarların ders oturumu gün ve saatlerini takip etmek için geliştirilen bir bilgisayar laboratuvar otomasyonudur.**
+**Üniversite veya lise gibi eğitim kurumlarında , eğitimcilerin laboratuvarların ders oturumu gün ve saatlerini takip etmek için geliştirilen bir bilgisayar laboratuvar otomasyonudur.Bilgisayar laboratuvarlarına alternatif olarak, sınıflar/derslikler eklenerek aynı şekilde sınıflar/derslikler'in ders oturumlarının gün ve saatlerini takip etmek için de kullanılabilir.**
 
 ## Özellikler
   :large_blue_circle: **Sistemde adminler ve eğitmenler olarak iki tür kullanıcı bulunmaktadır.**  
