@@ -1,61 +1,74 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<h1 align="center">Bilgisayar Laboratuvarı Otomasyonu</h1>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+  <a href="https://github.com/mustafadalga/bilgisayar-lab-otomasyonu">
+    <img src="https://user-images.githubusercontent.com/25087769/93143117-f8341180-f6ef-11ea-9e15-6c029d6db2a1.png" alt="Bilgisayar Laboratuvarı Otomasyonu" width="300">
+  </a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Açıklama 
+**Üniversite veya lise gibi bilgisayar laboratuvarlarının kullanıldığı yerlerde , eğitimcilerin laboratuvarların ders oturumu gün ve saatlerini takip etmek için geliştirilen bir bilgisayar laboratuvar otomasyonudur.**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Özellikler
+  :large_blue_circle: **Sistemde adminler ve eğitmenler olarak iki tür kullanıcı bulunmaktadır.**  
+  :large_blue_circle: **Laboratuvarlar ve dersler sadece admin tarafından eklenebilmektedir.**  
+  :large_blue_circle: **Eğitmenler sisteme üye olarak ilgili laboratuvarlarda verdiği dersleri gün ve saat olarak belirleyerek oturum ekleyebilmektedir.**  
+  :large_blue_circle: **Eğitmenler diğer eğitmenlerin ders oturumlarına müdahale edememektedir.**  
+  :large_blue_circle: **Eğitmenler kendi ekledikleri ders oturumlarını düzenleyebilir veya silebilir.**  
+  :large_blue_circle: **Sadece @marmara.edu.tr uzantılı adresler ile sisteme üye olunabilmektedir.E-mail domain adreslerini [buradan](https://github.com/mustafadalga/bilgisayar-lab-otomasyonu/blob/7049aed67531d2296fe5c8a55cb6ea8f531834e8/app/Http/Controllers/Auth/RegisterController.php#L57) değiştirebilirsiniz.**  
+    :large_blue_circle: **Proje kurulumunda ilk admini eklemek için bir seçenek bulunmamaktadır.Bu yüzden bir eğitmen eklenip manuel olarak veritabanında users tablosunda kullanıcı rolü 1 olarak değiştirilerek yönetici yapılabilir.**  
+  
+## Demo
+#### Örnek Admin 
+  :small_blue_diamond:     **E-mail:** admin@example.com  **Parola:** LabOtomasyon :arrow_right: [Admin Paneli](https://labotomasyon.herokuapp.com/dashboard/login)
+#### Örnek Eğitmen
+  :small_blue_diamond: **E-mail:** mustafadalga@marmara.edu.tr  **Parola:** MustafaDalga :arrow_right: [Eğitmen Girişi](https://labotomasyon.herokuapp.com) 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Kurulum
+* #### 1. Composer bağımlılıklarını yükleme
+ ```
+composer install
+```
+* #### 2. NPM bağımlılıklarını yükleme
+ ```
+npm install
+```
+* #### 3. .env dosyasının kopyasını oluşturma
+ ```
+cp .env.example .env
+```
+* #### 4. APP_KEY uygulama şifreleme anahtarı oluşturma
+ ```
+php artisan key:generate
+```
+* #### 5. Veritabanı bilgilerini ekleme
 
-## Learning Laravel
+> .env dosyasında **DB_CONNECTION**,**DB_HOST**,**DB_PORT**, **DB_DATABASE**, **DB_USERNAME** ve **DB_PASSWORD** değişkenlerini yeni oluşturduğunuz veritabanının kimlik bilgileriyle eşleşecek şekilde doldurun.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* #### 6. E-Mail yapılandırılması
+> .env dosyasında **MAIL_DRIVER**,**MAIL_HOST**,**MAIL_PORT**, **MAIL_USERNAME**, **MAIL_PASSWORD** , **MAIL_ENCRYPTION** , **MAIL_FROM_ADDRESS** ve **MAIL_FROM_NAME** değişkenlerini değişkenlerini kendi bilgilerinize göre doldurun.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### Kullanılan Teknolojiler
+ :small_blue_diamond: Laravel  
+ :small_blue_diamond: PostgreSQL   
+ :small_blue_diamond: Vue.js  
+ :small_blue_diamond: Bootstrap    
+ :small_blue_diamond: HTML    
+ :small_blue_diamond: CSS  
+ 
+ ## Proje Görüntüleri
+ 
+:small_blue_diamond: Laboratuvar Oturumları
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![ornek-lab](https://user-images.githubusercontent.com/25087769/93149830-13a71880-f700-11ea-80e4-91e33f353fc1.png)
 
-### Premium Partners
+:small_blue_diamond: Yönetici Paneli - Laboratuvarlar
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+![laboratuvarlar](https://user-images.githubusercontent.com/25087769/93150091-e3ac4500-f700-11ea-8e56-cf0b4bbda383.png)
 
-## Contributing
+:small_blue_diamond: Yönetici Paneli - Eğitmenler
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![egitmenler](https://user-images.githubusercontent.com/25087769/93150090-e313ae80-f700-11ea-942a-86a2e89681b8.png)
+ 
