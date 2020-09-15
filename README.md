@@ -76,3 +76,10 @@ php artisan key:generate
 :small_blue_diamond: Yönetici Paneli - Dersler
 
 ![dersler](https://user-images.githubusercontent.com/25087769/93150089-e1e28180-f700-11ea-846b-95dd909ad503.png)
+
+
+## License
+ [![License](https://img.shields.io/github/license/mustafadalga/bilgisayar-lab-otomasyonu)](https://github.com/mustafadalga/bilgisayar-lab-otomasyonu/blob/master/LICENSE)
+
+
+
