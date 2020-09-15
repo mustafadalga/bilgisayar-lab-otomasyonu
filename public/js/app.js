@@ -4698,17 +4698,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "LaboratuvarDetay",
   props: ['lab', 'oturumlar', 'aktif_egitmen'],
@@ -46859,12 +46848,14 @@ var render = function() {
         _c("h1", { staticClass: "col" }, [_vm._v(_vm._s(_vm.lab.adi))])
       ]),
       _vm._v(" "),
-      _c("hr", { staticClass: "bg-royal-blue border-5" }),
-      _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
+      _c("hr", { staticClass: "bg-royal-blue border-5" }),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
       _c("div", { staticClass: "row" }, [
-        _vm._m(1),
+        _vm._m(2),
         _vm._v(" "),
         _c("div", { staticClass: "col-10" }, [
           _c(
@@ -47037,8 +47028,6 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
       _c("oturum-ekle-w", {
         attrs: { aktif_oturum: _vm.oturum, dersler: _vm.dersler },
         on: { oturumlarGuncelle: _vm.oturumlarGuncelle }
@@ -47055,6 +47044,43 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-75 mx-auto mt-4" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-4 bg-green-accent-4 text-white text-center p-1" },
+          [_vm._v("Kendi Oturumlarım")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-4 bg-red-darken text-white text-center p-1" },
+          [_vm._v("Diğer Eğitmenlerin Oturumları")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "col-4 bg-blue-light-5 text-royal-blue text-center p-1"
+          },
+          [_vm._v("Boş Oturumlar")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mt-3 d-flex align-items-center" }, [
+        _c("i", {
+          staticClass: "fas fa-info-circle  fa-2x text-royal-blue mr-2"
+        }),
+        _vm._v(
+          " Düzenleme yapmak istediğiniz alana tıklayarak ,oturum ekleme,düzenleme ve silme işlemlerini gerçekleştirebilirsiniz.\n        "
+        )
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -47220,63 +47246,6 @@ var staticRenderFns = [
           ])
         ]
       )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card w-75 mx-auto mt-4" }, [
-      _c(
-        "div",
-        {
-          staticClass: "card-header bg-royal-blue text-white font-weight-bold"
-        },
-        [_vm._v("\n            Renkler ve Anlamları\n        ")]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "card body" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-4 bg-green-accent-4 text-white text-center p-1"
-              },
-              [_vm._v("Kendi Oturumlarım")]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-4 bg-red-darken text-white text-center p-1" },
-              [_vm._v("Diğer Eğitmenlerin Oturumları")]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-4 bg-blue-light-5 text-royal-blue text-center p-1"
-              },
-              [_vm._v("Boş Oturumlar")]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "card-title mt-3 d-flex align-items-center" },
-          [
-            _c("i", {
-              staticClass: "fas fa-info-circle  fa-2x text-royal-blue mr-2"
-            }),
-            _vm._v(
-              " Düzenleme yapmak istediğiniz alana tıklayarak ,oturum ekleme,düzenleme ve silme işlemlerini gerçekleştirebilirsiniz.\n            "
-            )
-          ]
-        )
-      ])
     ])
   }
 ]

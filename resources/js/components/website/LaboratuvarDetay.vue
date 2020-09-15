@@ -4,10 +4,18 @@
             <h1 class="col">{{  lab.adi }}</h1>
         </div>
 
+        <div class="w-75 mx-auto mt-4">
+            <div class="row">
+                <div class="col-4 bg-green-accent-4 text-white text-center p-1">Kendi Oturumlarım</div>
+                <div class="col-4 bg-red-darken text-white text-center p-1">Diğer Eğitmenlerin Oturumları</div>
+                <div class="col-4 bg-blue-light-5 text-royal-blue text-center p-1">Boş Oturumlar</div>
+            </div>
+            <div class="mt-3 d-flex align-items-center">
+                <i class="fas fa-info-circle  fa-2x text-royal-blue mr-2"></i> Düzenleme yapmak istediğiniz alana tıklayarak ,oturum ekleme,düzenleme ve silme işlemlerini gerçekleştirebilirsiniz.
+            </div>
+        </div>
 
         <hr class="bg-royal-blue border-5">
-
-
         <div class="row">
             <div class="col-1">
             </div>
@@ -109,25 +117,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <div class="card w-75 mx-auto mt-4">
-            <div class="card-header bg-royal-blue text-white font-weight-bold">
-                Renkler ve Anlamları
-            </div>
-            <div class="card-body">
-
-                <div class="card body">
-                    <div class="row">
-                        <div class="col-4 bg-green-accent-4 text-white text-center p-1">Kendi Oturumlarım</div>
-                        <div class="col-4 bg-red-darken text-white text-center p-1">Diğer Eğitmenlerin Oturumları</div>
-                        <div class="col-4 bg-blue-light-5 text-royal-blue text-center p-1">Boş Oturumlar</div>
-                    </div>
-                </div>
-                <div class="card-title mt-3 d-flex align-items-center">
-                    <i class="fas fa-info-circle  fa-2x text-royal-blue mr-2"></i> Düzenleme yapmak istediğiniz alana tıklayarak ,oturum ekleme,düzenleme ve silme işlemlerini gerçekleştirebilirsiniz.
-                </div>
-            </div>
         </div>
 
         <oturum-ekle-w  :aktif_oturum="oturum"  :dersler="dersler" @oturumlarGuncelle="oturumlarGuncelle"></oturum-ekle-w>
