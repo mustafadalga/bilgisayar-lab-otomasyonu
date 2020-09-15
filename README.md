@@ -62,7 +62,8 @@ php artisan key:generate
  
 :small_blue_diamond: Laboratuvar Oturumları
 
-![ornek-lab](https://user-images.githubusercontent.com/25087769/93149830-13a71880-f700-11ea-80e4-91e33f353fc1.png)
+![ornek-lab](https://user-images.githubusercontent.com/25087769/93239285-3cc0bb00-f78b-11ea-8b6d-5fb2accee861.png)
+
 
 :small_blue_diamond: Yönetici Paneli - Laboratuvarlar
 
